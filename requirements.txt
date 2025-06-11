@@ -1,0 +1,4 @@
+PyPDF2
+python-docx
+pycryptodome
+rapidfuzz>=2.1.3 
