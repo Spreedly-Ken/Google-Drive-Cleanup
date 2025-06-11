@@ -12,6 +12,14 @@ deletion_summary.md
 *.tmp
 *.log
 
+# Ignore PDF and DOCX files
+*.pdf
+*.docx
+
+# Ignore contracts and docs directories
+Contracts_Copy/
+docs/
+
 # Python specific ignores
 __pycache__/
 *.pyc
