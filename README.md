@@ -6,9 +6,11 @@ This repository contains a suite of Python scripts designed to automate the mana
 
 ## Project Structure
 
-- **Contracts_Copy/** - Contains customer contract folders.
+**Note:** The following directories are part of the overall project structure but are intentionally not shared on GitHub; they are excluded via .gitignore due to sensitive content and large data files.
+
+- **Contracts_Copy/** - Contains customer contract folders. *(Ignored - not shared)*
 - **data/** - Contains input CSV files (e.g., keywords) used by some scripts. *(Ignored - not shared)*
-- **docs/** - Documentation related to the project.
+- **docs/** - Documentation and other project-related files. *(Ignored - not shared)*
 - **scripts/** - Python scripts for various tasks:
   - `organize_by_year.py`: Organize files by creation year.
   - `copy_final_pdfs.py`: Copy PDF files from final(s) folders.
@@ -39,9 +41,13 @@ Install dependencies using:
 pip install -r requirements.txt
 ```
 
-## Git Ignore
+## Git Ignore / Sensitive Data
 
-Sensitive data, CSV files, outputs, and input files (e.g., in the data directory) are intentionally not shared. See the `.gitignore` file for details.
+Sensitive data such as contracts (in PDF and DOCX formats), CSV files, outputs, and other confidential or large files are intentionally not shared in this repository. The following are excluded via the `.gitignore` file:
+
+- Directories: `Contracts_Copy/`, `data/`, `docs/`
+- File types: `.pdf`, `.docx`, `.csv`
+- Other common temporary files and artifacts (e.g., `__pycache__/`, `.DS_Store`, etc.)
 
 ## How to Use
 
